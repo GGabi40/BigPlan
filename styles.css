@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+:root {
+    --header-bg: rgba(00, 00, 00, 0.5);
+    --background-primary: rgb(4, 1, 37);
+    --background-secundary: rgb(0, 0, 20);
+    --font-color: white;
+    --font-color-btn: rgb(255, 124, 36);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    max-width: 100vw;
+
+    background: linear-gradient(to bottom, var(--background-secundary), var(--background-primary));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: var(--font-color);
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+label {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+li {
+    font-size: 1.5rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    margin-top: 3rem;
+    padding: 2rem;
+
+    background-color: var(--header-bg);
+}
+
+main {
+    margin: 5rem auto;
+    padding: 2rem;
+}
+
+.for-inputs {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#formulario {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    gap: 2.5rem;
+}
+
+#input-idea, #idea-description {
+    font-family: monospace, sans-serif;
+    letter-spacing: 0.3px;
+    font-size: 1.4rem;
+
+    padding: 1.3rem;
+    min-width: 30vw;
+    min-height: 60px;
+
+    border-radius: 10px;
+    background-color: rgba(0, 0, 19, 0.774);
+    color: white;
+}
+
+#input-idea {
+    min-width: 25vw;
+}
+
+#idea-description {
+    min-width: 300px;
+}
+
+#input-idea:hover, #idea-description:hover {
+    box-shadow: 0 0 4px #ff0, 0 0 6px #ffa500, 0 0 8px #87cefa;
+}
+
+#div-title, #div-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#label-input, #label-description {
+    margin-bottom: 10px;
+}
+
+#submit {
+    height: 50px;
+    width: 80px;
+    font-size: 2em;
+    font-weight: 800;
+    border-radius: 10px;
+    color: rgb(0, 0, 19);
+}
+
+#submit:hover {
+    background-color: rgb(255, 255, 184);
+    cursor: pointer;
+    color: var(--font-color-btn);
+    border-color: yellow;
+    box-shadow: 0 0 2px rgba(255, 255, 0, 0.315), 0 0 3px #ffa60075, 0 0 4px #87cefa81;
+}
+
+.contains-ideas {
+    margin: 25px 60px;
+}
+
+.contains-ideas p {
+    margin-bottom: 20px;
+}
+
+.contains-ideas ul {
+    list-style: none;
+}
+
+.order-list {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    font-size: 1.8em;
+}
+
+.order-list li {
+    margin-right: 25px;
+}
+
+.order-list button {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 8px;
+    border-radius: 15px;
+}
+
+.order-list button:hover {
+    cursor: pointer;
+    background-color: rgb(172, 172, 172);
+}
+
+.lista-de-idea {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ul-li {
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+/* Botones add, remove */
+.add, .clear {
+    border-radius: 12px;
+    padding: 3px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.add:hover, .clear:hover {
+    cursor: pointer;
+}
+
+.add:hover {
+    box-shadow: 0 0 4px rgba(255, 255, 0, 0.315), 0 0 6px #ffa60075, 0 0 8px #87cefa81;
+}
+
+.clear:hover {
+    box-shadow: 0 0 4px rgba(255, 115, 0, 0.315), 0 0 6px #ff260075, 0 0 8px #87cefa81;
+}
+
+/* Form con tareas */
+
+.checkboxes-form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    max-width: 100%;
+    gap: 10px;
+    padding: 6px;
+}
+
+#task-check {
+    border: 1px solid goldenrod;
+    
+    appearance: none;
+    -webkit-appearance: none;
+    height: 25px;
+    min-width: 25px;
+    max-width: 26px;
+
+    background: rgba(183, 183, 255, 0.822);
+    border-radius: 6px;
+}
+
+@media (max-width: 620px) {
+    .checkboxes-form {
+        gap: 5px;
+        justify-content: center;
+    }
+}
+
+#task-check:hover {
+    cursor: pointer;
+    background-color: rgba(150, 150, 212, 0.822);
+}
+
+#task-check:checked {
+    border: none;
+    background-color: rgb(126, 252, 53);
+    box-shadow: 0 0 4px rgba(255, 255, 0, 0.315), 0 0 6px #ffa60075, 0 0 8px #87cefa81;
+}
+
+#label-checkbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    font-size: 1em;
+    text-align: center;
+    
+    padding: 6px;
+}

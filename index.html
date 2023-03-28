@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Plan</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="website icon" href="./assets/icon.png">
+</head>
+<body>
+    <header>
+        <h1>¿Cuál es el gran plan de hoy?</h1>
+    </header>
+    <main>
+        <form id="formulario" autocomplete="off">
+
+            <section class="for-inputs">
+                <!-- Título de ideas -->
+                <div id="div-title">
+                    <label for="input-idea" id="label-input">Título del Plan</label>
+                    <input type="text" name="input-idea" id="input-idea" placeholder="Título del plan (ej.: Reels para ig)" title="Escribí algo corto y conciso acerca de tu idea">
+                </div>
+                <!-- Descripcion de ideas -->
+                <div id="div-description">
+                    <label for="idea-description" id="label-description">Descripción del Plan</label>
+                    <textarea id="idea-description" placeholder="Descripcion (ej.: Mi reels será sobre alienígenas...)" rows="2" cols="20" title="Acá podés describir mejor tu idea!"></textarea>
+                </div>
+
+            </section>
+
+            <button type="submit" id="submit" title="Enviar">+</button>
+        </form>
+
+        <!-- Sector de las ideas -->
+        <section class="contains-ideas">
+            <p>Tu lista:</p>
+            <ul class="listas-de-ideas">
+
+            </ul>
+        </section>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
