@@ -14,17 +14,16 @@
     </header>
     <main>
         <form id="formulario" autocomplete="off">
-
             <section class="for-inputs">
                 <!-- Título de ideas -->
                 <div id="div-title">
                     <label for="input-idea" id="label-input">Título del Plan</label>
-                    <input type="text" name="input-idea" id="input-idea" placeholder="Título del plan (ej.: Reels para ig)" title="Escribí algo corto y conciso acerca de tu idea">
+                    <input type="text" name="input-idea" id="input-idea" placeholder="Ej.: Reels para ig" title="Escribí algo corto y conciso acerca de tu idea">
                 </div>
                 <!-- Descripcion de ideas -->
                 <div id="div-description">
                     <label for="idea-description" id="label-description">Descripción del Plan</label>
-                    <textarea id="idea-description" placeholder="Descripcion (ej.: Mi reels será sobre alienígenas...)" rows="2" cols="20" title="Acá podés describir mejor tu idea!"></textarea>
+                    <textarea id="idea-description" placeholder="Ej.: Mi reels será sobre alienígenas..." rows="2" cols="20" title="Acá podés describir mejor tu idea!"></textarea>
                 </div>
 
             </section>
@@ -32,7 +31,27 @@
             <button type="submit" id="submit" title="Enviar">+</button>
         </form>
 
-        <!-- Sector de las ideas -->
+        <div class="para-mobile">
+            <!-- <button id="btn-modal" onclick="openModal()">Adicionar Idea</button> -->
+
+            <!-- TODO: MODAL para MOBILES -->
+            <!-- <dialog class="modal">
+                <h2 class="modal__title">¡Vamos a realizarla!</h2>
+                <div id="div-title">
+                    <label for="input-idea" id="label-input">Título del Plan</label>
+                    <input type="text" name="input-idea" id="input-idea" placeholder="Título del plan (ej.: Reels para ig)" title="Escribí algo corto y conciso acerca de tu idea">
+                </div>
+                
+                <div id="div-description">
+                    <label for="idea-description" id="label-description">Descripción del Plan</label>
+                    <textarea id="idea-description" placeholder="Descripcion (ej.: Mi reels será sobre alienígenas...)" rows="2" cols="20" title="Acá podés describir mejor tu idea!"></textarea>
+                </div>
+                
+                <button type="submit" id="submit" title="Enviar">+</button>
+                <button class="btn-close" onclick="closeModal()">Close</button>
+            </dialog> -->
+        </div>
+
         <section class="contains-ideas">
             <p>Tu lista:</p>
             <ul class="listas-de-ideas">
@@ -41,6 +60,7 @@
         </section>
     </main>
 
+    <script src="./modal.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>
