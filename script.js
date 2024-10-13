@@ -4,6 +4,9 @@ const ul = document.querySelector('.listas-de-ideas');
 const inputIdea = document.querySelector('#input-idea');
 const descriptionIdea = document.querySelector('#idea-description');
 
+/* Imp! Organizar código para q se guarde
+en JSON. */
+
 /* 
 -- TODO:
 [] EVENT LISTENER
