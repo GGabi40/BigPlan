@@ -7,6 +7,9 @@ const description = document.querySelector('#idea-description');
 /* Imp! Organizar código para q se guarde
 en JSON. */
 
+/* Imp! Organizar código para q se guarde
+en JSON. */
+
 /* 
 -- TODO:
 [X] EVENT LISTENER
